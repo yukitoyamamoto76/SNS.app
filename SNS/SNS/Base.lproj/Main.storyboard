@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SNS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pannda" translatesAutoresizingMaskIntoConstraints="NO" id="Frk-JB-1ej">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZA-SQ-4fb">
+                                <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="action" id="2Sc-iQ-d8V">
+                                        <connections>
+                                            <action selector="showActivityView:" destination="BYZ-38-t0r" id="gVn-Re-Hba"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Frk-JB-1ej" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DYF-oQ-lqu"/>
+                            <constraint firstItem="Frk-JB-1ej" firstAttribute="leading" secondItem="KZA-SQ-4fb" secondAttribute="leading" id="L3d-cb-agm"/>
+                            <constraint firstItem="KZA-SQ-4fb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VK3-4g-quF"/>
+                            <constraint firstItem="Frk-JB-1ej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="g5B-i5-H6K"/>
+                            <constraint firstAttribute="bottom" secondItem="Frk-JB-1ej" secondAttribute="bottom" id="nYT-6e-il9"/>
+                            <constraint firstAttribute="trailing" secondItem="Frk-JB-1ej" secondAttribute="trailing" id="oiI-Ls-s3E"/>
+                            <constraint firstItem="Frk-JB-1ej" firstAttribute="trailing" secondItem="KZA-SQ-4fb" secondAttribute="trailing" id="rGr-5W-Y7X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Frk-JB-1ej" id="nMP-fj-6eM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="112.3152709359606"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pannda" width="692" height="470"/>
+    </resources>
+</document>
